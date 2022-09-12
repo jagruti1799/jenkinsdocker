@@ -1,5 +1,5 @@
 import com.jagruti.DockerOp
-def call (map confi =[]) {
+def call (confi =[:]) {
     def dop = new DockerOp(config.script)
     dop.dockerBuild()
     dop.dockerPush()
