@@ -20,6 +20,6 @@ class DockerOp
 
     def dockerDeploy()
     {
-        print("hello Deploy")
+        script.echo "hello Deploy"
     }
 }
