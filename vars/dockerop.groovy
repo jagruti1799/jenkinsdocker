@@ -4,4 +4,5 @@ def call () {
     dop.dockerBuild()
     dop.dockerPush()
     dop.dockerDeploy()
+    println("done")
 }
