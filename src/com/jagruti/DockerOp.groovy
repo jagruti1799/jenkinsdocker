@@ -6,16 +6,16 @@ class DockerOp
     DockerOp(jenscript)
     {
         script=jenscript
-        jenscript.echo "class init"
+        script.echo "class init"
     }
     def dockerBuild()
     {
-        jenscript.echo "class Build"
+        script.echo "class Build"
     }
 
     def dockerPush()
     {
-        jenscript.echo "class Pushed"
+        script.echo "class Pushed"
     }
 
     def dockerDeploy()
