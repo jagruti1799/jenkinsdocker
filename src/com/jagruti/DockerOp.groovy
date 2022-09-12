@@ -2,18 +2,20 @@ package com.jagruti
 
 class DockerOp
 {
-    DockerOp()
+    def script;
+    DockerOp(jenscript)
     {
-        println("class called")
+        script=jenscript
+        jenscript.echo "class init"
     }
     def dockerBuild()
     {
-        print("hello Build")
+        jenscript.echo "class Build"
     }
 
     def dockerPush()
     {
-        print("hello push")
+        jenscript.echo "class Pushed"
     }
 
     def dockerDeploy()
